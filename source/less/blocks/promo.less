@@ -1,0 +1,77 @@
+.promo {
+  min-height: 570px;
+  padding-top: 232px;
+  font-weight: 700;
+  font-family: @other-font;
+  color: #ffffff;
+  background-color: #21201c;
+  background-image: url("../img/bg-promo-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.promo__text {
+  margin: 0;
+  font-size: 56px;
+  line-height: 58px;
+}
+
+.promo__sub-text {
+  margin: 0;
+  font-size: 40px;
+  line-height: 42px;
+}
+
+.promo__other-text {
+  color: #fea100;
+}
+
+@media (max-width: 992px) {
+  .promo {
+    min-height: 500px;
+    padding-top: 198px;
+    background-image: url("../img/bg-promo-tablet@1x.jpg");
+  }
+
+  .promo__text,
+  .promo__sub-text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .promo {
+    min-height: 356px;
+    padding-top: 137px;
+    background-image: url("../img/bg-promo-tablet-small@1x.jpg");
+  }
+
+  .promo__text {
+    font-size: 50px;
+    line-height: 52px;
+  }
+
+  .promo__sub-text {
+    font-size: 36px;
+    line-height: 38px;
+  }
+}
+
+@media (max-width: 480px) {
+  .promo {
+    padding-top: 81px;
+    min-height: 222px;
+    background-image: url("../img/bg-promo-mobile@1x.jpg");
+  }
+
+  .promo__text {
+    font-size: 33px;
+    line-height: 35px;
+  }
+
+  .promo__sub-text {
+    font-size: 24px;
+    line-height: 26px;
+  }
+}

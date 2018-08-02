@@ -1,0 +1,123 @@
+.special {
+  margin-top: 98px;
+}
+
+.special__top {
+  height: 440px;
+  padding-top: 95px;
+  background-color: @black;
+  background-image: url("../img/bg-special-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.special__title {
+  text-align: center;
+  font-weight: 700;
+  font-family: @other-font;
+  font-size: 35px;
+  color: #ffffff;
+}
+
+.special__list {
+  .list-reset();
+  display: flex;
+  justify-content: space-between;
+  width: 1140px;
+  margin-top: 30px;
+}
+
+.special__item {
+  display: flex;
+  flex-direction: column;
+  width: 545px;
+  box-shadow: 0 24px 38px 0 rgba(0, 0, 0, 0.09);
+}
+
+.special__description {
+  width: 430px;
+  margin: 0 auto;
+  margin-top: 45px;
+  text-align: center;
+}
+
+.special__heading {
+  margin-bottom: 18px;
+  font-weight: 700;
+  font-family: @other-font;
+  font-size: 26px;
+  color: @black;
+}
+
+.special__order {
+  display: flex;
+  justify-content: space-between;
+  width: 473px;
+  margin: 0 auto;
+  margin-top: auto;
+  padding-top: 18px;
+  padding-bottom: 29px;
+  border-top: 1px solid #e1e1e1;
+}
+
+.special__delivery-text {
+  width: 58px;
+  margin: 0;
+  padding-top: 5px;
+  padding-right: 24px;
+  padding-bottom: 5px;
+  box-sizing: content-box;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 17px;
+  color: @black;
+  text-transform: uppercase;
+  border-right: 1px solid #e1e1e1;
+}
+
+.special__pink-text {
+  color: #fe4c8d;
+}
+
+.special__number {
+  align-self: center;
+  margin: 0;
+}
+
+.special__price {
+  align-self: center;
+  margin: 0;
+  font-weight: 700;
+  font-family: @other-font;
+  font-size: 30px;
+  color: @yellow;
+}
+
+@media (max-width: 1199.98px) {
+  .special__list {
+    width: 960px;
+  }
+
+  .special__item {
+    width: 455px;
+  }
+
+  .special__order {
+    width: 440px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .special__top {
+    background-image: url("../img/bg-special-tablet@1x.jpg");
+  }
+
+  .special__list {
+    width: 720px;
+    flex-direction: column;
+  }
+
+  .special__item {
+    margin: 0 auto;
+  }
+}
