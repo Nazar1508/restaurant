@@ -15,7 +15,6 @@ var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var server = require("browser-sync").create();
-var run = require("run-sequence");
 var del = require("del");
 
 gulp.task("style", function() {
@@ -31,7 +30,6 @@ gulp.task("style", function() {
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
-
 
 gulp.task("scripts", function () {
   return gulp.src("source/js/**/*.js")
@@ -93,8 +91,7 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**",
-    "source/bootstrap/**",
+    "source/libraries/**",
   ], {
     base: "source"
   })

@@ -1,0 +1,57 @@
+.social__list {
+  .list-reset();
+  display: flex;
+  justify-content: space-between;
+  width: 170px;
+  margin: 0 auto;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.social__link--facebook {
+  background-color: #3b5998;
+
+  &:hover {
+    background-color: lighten(#3b5998, 8%);
+  }
+
+  &:active {
+    background-color: darken(#3b5998, 8%);
+  }
+}
+
+.social__link--twitter {
+  background-color: #55acee;
+
+  &:hover {
+    background-color: lighten(#55acee, 8%);
+  }
+
+  &:active {
+    background-color: darken(#55acee, 8%);
+  }
+}
+
+.social__link--google {
+  background-color: #dd4b39;
+
+  &:hover {
+    background-color: lighten(#dd4b39, 8%);
+  }
+
+  &:active {
+    background-color: darken(#dd4b39, 8%);
+  }
+}
+
+.social__icon {
+  min-width: auto;
+}

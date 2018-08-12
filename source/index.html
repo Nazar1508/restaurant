@@ -6,8 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Sintony:400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700" rel="stylesheet">
-  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="libraries/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="libraries/animate.min.css">
   <title>Restaurant</title>
 </head>
 <body>
@@ -47,7 +48,7 @@
           </nav>
         </div>
         <div class="col-lg-3 col-md-12 d-flex justify-content-end">
-          <a class="page-header__button site-button site-button--table" href="#">
+          <a class="page-header__button site-button site-button--table animated pulse infinite delay-2s" href="#">
             Book your table
           </a>
         </div>
@@ -61,8 +62,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <p class="promo__text">Teast your fav dish</p>
-            <p class="promo__sub-text">from <span class="promo__other-text">luxury restaurent.</span></p>
+            <p class="promo__text animated fadeInDown slow">Teast your fav dish</p>
+            <p class="promo__sub-text animated fadeInUp slow">from <span class="promo__other-text">luxury restaurent.</span></p>
           </div>
         </div>
       </div>
@@ -73,10 +74,10 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="contacts__wrapper">
-              <p class="contacts__text">
+              <p class="contacts__text animated fadeInLeft slow">
                 Call us Now for <span class="contacts__other-text">Home Delivery</span>
               </p>
-              <p class="contacts__number number">
+              <p class="contacts__number number animated fadeInRight">
                 1-008 005 006
               </p>
             </div>
@@ -87,15 +88,15 @@
     <section class="about-us">
       <div class="container">
         <div class="row">
-          <div class="col-xl-6">
+          <div class="col-xl-6 wow fadeInDown" data-wow-offset="100">
             <h2 class="about-us__title">About Restaurent</h2>
-            <p class="about-us__text">
+            <p class="about-us__text wow fadeInDown">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged...
             </p>
-            <a class="about-us__link site-button site-button--about" href="#">Read more</a>
+            <a class="about-us__link site-button site-button--about animated pulse infinite" href="#">Read more</a>
           </div>
           <div class="col-xl-3 col-12">
-            <ul class="about-us__list about-us__list--first">
+            <ul class="about-us__list about-us__list--first wow fadeInRight" data-wow-offset="100">
               <li class="about-us__item about-us__item--1">
                 <img class="about-us__image" src="img/food1.jpg" width="270" height="150" alt="Our food">
               </li>
@@ -105,7 +106,7 @@
             </ul>
           </div>
           <div class="col-xl-3 col-12">
-            <ul class="about-us__list about-us__list--second">
+            <ul class="about-us__list about-us__list--second wow fadeInLeft" data-wow-offset="100">
               <li class="about-us__item about-us__item--3">
                 <img class="about-us__image" src="img/food3.jpg" width="270" height="150" alt="Our food">
               </li>
@@ -118,68 +119,109 @@
       </div>
     </section>
     <section class="special">
-      <div class="special__top">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <h2 class="special__title">Today Special</h2>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="special__title wow fadeInDown" data-wow-offset="100">Today Special</h2>
           </div>
-          <div class="row">
-            <div class="col-lx-12">
-              <ul class="special__list">
-                <li class="special__item">
-                  <picture>
-                    <source media="(max-width: 1200px)" srcset="img/special1-desktop-small@1x.jpg">
-                    <img class="special__image" src="img/special1-desktop@1x.jpg" alt="Food one">
-                  </picture>
-                  <div class="special__description">
-                    <h3 class="special__heading">Food Name one</h3>
-                    <p class="special__text">
-                      printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.
-                    </p>
-                  </div>
-                  <div class="special__order">
-                    <p class="special__delivery-text">
-                      Home <span class="special__pink-text">Delivary</span>
-                    </p>
-                    <p class="special__number number">
-                      1-008 005 006
-                    </p>
-                    <p class="special__price">
-                      <sup>$</sup>89.00
-                    </p>
-                  </div>
-                </li>
-                <li class="special__item">
-                  <picture>
-                    <source media="(max-width: 1200px)" srcset="img/special2-desktop-small@1x.jpg">
-                    <img class="special__image" src="img/special2-desktop@1x.jpg" alt="Food two">
-                  </picture>
-                  <div class="special__description">
-                    <h3 class="special__heading">Food Name two</h3>
-                    <p class="special__text">
-                      printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.
-                    </p>
-                  </div>
-                  <div class="special__order">
-                    <p class="special__delivery-text">
-                      Home <span class="special__pink-text">Delivary</span>
-                    </p>
-                    <p class="special__number number">
-                      1-008 005 006
-                    </p>
-                    <p class="special__price">
-                      <sup>$</sup>99.00
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-12">
+            <ul class="special__list">
+              <li class="special__item wow fadeInLeft" data-wow-offset="100">
+                <picture>
+                  <source media="(max-width: 767.98px)" srcset="img/special1-mobile@1x.jpg">
+                  <source media="(max-width: 1199.98px)" srcset="img/special1-desktop-small@1x.jpg">
+                  <img class="special__image" src="img/special1-desktop@1x.jpg" alt="Food one">
+                </picture>
+                <div class="special__description">
+                  <h3 class="special__heading">Food Name one</h3>
+                  <p class="special__text">
+                    printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.
+                  </p>
+                </div>
+                <div class="special__order">
+                  <p class="special__delivery-text">
+                    Home <span class="special__pink-text">Delivary</span>
+                  </p>
+                  <p class="special__number number">
+                    1-008 005 006
+                  </p>
+                  <p class="special__price">
+                    <sup>$</sup>89.00
+                  </p>
+                </div>
+              </li>
+              <li class="special__item wow fadeInRight" data-wow-offset="100">
+                <picture>
+                  <source media="(max-width: 767.98px)" srcset="img/special2-mobile@1x.jpg">
+                  <source media="(max-width: 1199.98px)" srcset="img/special2-desktop-small@1x.jpg">
+                  <img class="special__image" src="img/special2-desktop@1x.jpg" alt="Food two">
+                </picture>
+                <div class="special__description">
+                  <h3 class="special__heading">Food Name two</h3>
+                  <p class="special__text">
+                    printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.
+                  </p>
+                </div>
+                <div class="special__order">
+                  <p class="special__delivery-text">
+                    Home <span class="special__pink-text">Delivary</span>
+                  </p>
+                  <p class="special__number number">
+                    1-008 005 006
+                  </p>
+                  <p class="special__price">
+                    <sup>$</sup>99.00
+                  </p>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
   </main>
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="page-footer__social social">
+            <ul class="social__list wow fadeInDown" data-wow-offset="100">
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="#">
+                  <span class="visually-hidden">Facebook</span>
+                  <img class="social__icon" src="img/icon/icon-facebook.png" width="11" height="20" alt="Facebook icon">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--twitter" href="#">
+                  <span class="visually-hidden">Twitter</span>
+                  <img class="social__icon" src="img/icon/icon-twitter.png" width="18" height="15" alt="Twitter icon">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--google" href="#">
+                  <span class="visually-hidden">Google</span>
+                  <img class="social__icon" src="img/icon/icon-google.png" width="26" height="18" alt="Google icon">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="page-footer__copyright copyright wow fadeInUp" data-wow-offset="100">
+            <p class="copyright__text">2018© All rights reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/wow.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </body>
 </html>

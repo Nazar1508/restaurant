@@ -1,14 +1,11 @@
 .special {
   margin-top: 98px;
-}
-
-.special__top {
-  height: 440px;
   padding-top: 95px;
-  background-color: @black;
+  padding-bottom: 128px;
   background-image: url("../img/bg-special-desktop@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 50%;
+  background-position: 50% 0;
+  background-size: auto 440px;
 }
 
 .special__title {
@@ -23,7 +20,6 @@
   .list-reset();
   display: flex;
   justify-content: space-between;
-  width: 1140px;
   margin-top: 30px;
 }
 
@@ -31,6 +27,7 @@
   display: flex;
   flex-direction: column;
   width: 545px;
+  background-color: #ffffff;
   box-shadow: 0 24px 38px 0 rgba(0, 0, 0, 0.09);
 }
 
@@ -42,6 +39,7 @@
 }
 
 .special__heading {
+  margin: 0;
   margin-bottom: 18px;
   font-weight: 700;
   font-family: @other-font;
@@ -82,7 +80,6 @@
 .special__number {
   align-self: center;
   margin: 0;
-  margin: 0;
 }
 
 .special__price {
@@ -95,12 +92,15 @@
 }
 
 @media (max-width: 1199.98px) {
-  .special__list {
-    width: 960px;
+  .special {
+    margin-top: 75px;
+    padding-top: 80px;
+    padding-bottom: 115px;
   }
 
   .special__item {
     width: 455px;
+    margin: 0 auto;
   }
 
   .special__order {
@@ -109,16 +109,63 @@
 }
 
 @media (max-width: 991.98px) {
-  .special__top {
+  .special {
+    padding-top: 65px;
+    padding-bottom: 100px;
     background-image: url("../img/bg-special-tablet@1x.jpg");
   }
 
   .special__list {
-    width: 720px;
     flex-direction: column;
   }
 
   .special__item {
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .special__item {
+    width: 273px;
+  }
+
+  .special__description {
+    width: auto;
+    margin-top: 18px;
+  }
+
+  .special__order {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .special__delivery-text {
+    width: auto;
+    text-align: center;
+    font-size: 15px;
+    border: none;
+  }
+
+  .special__price {
+    margin-top: 15px;
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 559.98px) {
+  .special {
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .special {
+    background-image: url("../img/bg-special-mobile@1x.jpg");
+  }
+
+  .special__title {
+    font-size: 31px;
   }
 }
